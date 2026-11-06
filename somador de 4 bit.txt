@@ -1,0 +1,5 @@
+circuito escolhido: somador de 4 bits 
+
+Esse circuito é capaz de somar dois valores em binário de 4 bits em um valor de 4 ou 5 bits graças ao carry.
+O circuito conta com  full adders para a adição dos bits de A e B com o Carry in e Carry out sendo o ultimo Carry out 
+o representante do ultimo bit. 
