@@ -3,6 +3,4 @@ circuito escolhido: somador de 4 bits
 Esse circuito é capaz de somar dois valores em binário de 4 bits em um valor de 4 ou 5 bits graças ao carry.
 O circuito conta com  full adders para a adição dos bits de A e B com o Carry input e Carry output sendo o ultimo Carry out o representante do ultimo bit. 
 
-Em cada full adder, duas portas XOR  computam a soma, a primeira adiciona A e B e o segundo combina com o Carry,
-Duas portas AND por adder geram os termos do carry
-e uma porta OR combina as duas AND para formar o Carry output 
+Cada estágio possui três portas AND para calcular as combinações do carry. As três saídas das AND são conectadas a uma porta OR. Cada estágio possui uma porta XOR de três entradas para calcular a soma. O carry de cada estágio é encaminhado para o próximo. O último estágio gera o Cout, que representa o bit adicional do resultado
