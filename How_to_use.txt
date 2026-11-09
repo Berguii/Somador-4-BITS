@@ -1,0 +1,14 @@
+A biblioteca IEEE disponibiliza padrões utilizados na descrição de circuitos digitais, STD_LOGIC_1164 permite trabalhar com sinais lógicos, como 0 e 1 e NUMERIC_STD disponibiliza recursos para realizar operações matemáticas com números binários
+
+Entity: Responsável por definir a estrutura externa do circuito, determinando quais serão suas entradas e saídas.
+
+A = Input
+B = Input
+S = Output
+
+S <= std_logic_vector(unsigned('0' & A) + unsigned('0' & B));
+
+Estaremos usando essa linha para atribuir um sinal igual ou maior que "S"
+ - a função std_logic_vector() converte o resultado novamente para o formato de sinais digitais, compatível com a saída S.
+ - unsigned() é responsável por interpretar os conjuntos de bits como números binários sem sinal
+-O operador & concatena bits, acrescentando um zero à esquerda de cada entrada. Isso aumenta seu tamanho de 4 para 5 bits, permitindo armazenar corretamente o resultado da soma, incluindo o possível carry.
